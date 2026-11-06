@@ -1,0 +1,376 @@
+{
+ "format": "kizuato-re-patch/1",
+ "game": "Branmarker",
+ "lang": "en",
+ "version": "2026.11.06",
+ "created": "2026-11-06T07:01:58.884Z",
+ "title": "Branmarker — English translation",
+ "requires": "your own copy of Branmarker (D.O. 1992), the five PC-98 floppy images (.hdm)",
+ "credits": [
+  "Branmarker EN",
+  "Original software © 1992 D.O.",
+  "Made with Kizuato Studio"
+ ],
+ "files": [
+  {
+   "path": "A/MAP01",
+   "patch": "A_MAP01.bps",
+   "source": {
+    "size": 1924,
+    "crc32": "8f474533"
+   },
+   "target": {
+    "size": 2249,
+    "crc32": "a3013b31"
+   }
+  },
+  {
+   "path": "A/MAP02",
+   "patch": "A_MAP02.bps",
+   "source": {
+    "size": 5584,
+    "crc32": "309936d1"
+   },
+   "target": {
+    "size": 5604,
+    "crc32": "ece5250c"
+   }
+  },
+  {
+   "path": "A/MAP02M",
+   "patch": "A_MAP02M.bps",
+   "source": {
+    "size": 14929,
+    "crc32": "e49e55ed"
+   },
+   "target": {
+    "size": 16379,
+    "crc32": "34b2e7c8"
+   }
+  },
+  {
+   "path": "A/MAP11",
+   "patch": "A_MAP11.bps",
+   "source": {
+    "size": 3342,
+    "crc32": "f07a5f91"
+   },
+   "target": {
+    "size": 3644,
+    "crc32": "ee8d1a91"
+   }
+  },
+  {
+   "path": "A/MAP12",
+   "patch": "A_MAP12.bps",
+   "source": {
+    "size": 3377,
+    "crc32": "2435b472"
+   },
+   "target": {
+    "size": 3377,
+    "crc32": "f18b3675"
+   }
+  },
+  {
+   "path": "A/MAP13",
+   "patch": "A_MAP13.bps",
+   "source": {
+    "size": 3997,
+    "crc32": "a2cb2bfc"
+   },
+   "target": {
+    "size": 4127,
+    "crc32": "87bf556a"
+   }
+  },
+  {
+   "path": "A/MAP15",
+   "patch": "A_MAP15.bps",
+   "source": {
+    "size": 3619,
+    "crc32": "446824eb"
+   },
+   "target": {
+    "size": 3619,
+    "crc32": "94f2f7cf"
+   }
+  },
+  {
+   "path": "A/MAP16",
+   "patch": "A_MAP16.bps",
+   "source": {
+    "size": 3537,
+    "crc32": "0d86c47d"
+   },
+   "target": {
+    "size": 3537,
+    "crc32": "ae18d42f"
+   }
+  },
+  {
+   "path": "A/MAP17",
+   "patch": "A_MAP17.bps",
+   "source": {
+    "size": 5129,
+    "crc32": "16441281"
+   },
+   "target": {
+    "size": 5129,
+    "crc32": "d77ea72e"
+   }
+  },
+  {
+   "path": "A/MAP18",
+   "patch": "A_MAP18.bps",
+   "source": {
+    "size": 985,
+    "crc32": "a9a203ac"
+   },
+   "target": {
+    "size": 1137,
+    "crc32": "798a790e"
+   }
+  },
+  {
+   "path": "A/MAP19",
+   "patch": "A_MAP19.bps",
+   "source": {
+    "size": 4793,
+    "crc32": "1d4465f6"
+   },
+   "target": {
+    "size": 4918,
+    "crc32": "2160bf4c"
+   }
+  },
+  {
+   "path": "A/MAP20",
+   "patch": "A_MAP20.bps",
+   "source": {
+    "size": 3189,
+    "crc32": "914f6974"
+   },
+   "target": {
+    "size": 3281,
+    "crc32": "7cf48af6"
+   }
+  },
+  {
+   "path": "A/MAP21",
+   "patch": "A_MAP21.bps",
+   "source": {
+    "size": 2879,
+    "crc32": "42e93fe0"
+   },
+   "target": {
+    "size": 2909,
+    "crc32": "a4ba3dae"
+   }
+  },
+  {
+   "path": "A/MAP22",
+   "patch": "A_MAP22.bps",
+   "source": {
+    "size": 3852,
+    "crc32": "db512917"
+   },
+   "target": {
+    "size": 3852,
+    "crc32": "6846f641"
+   }
+  },
+  {
+   "path": "A/MAP23",
+   "patch": "A_MAP23.bps",
+   "source": {
+    "size": 3567,
+    "crc32": "4fba2313"
+   },
+   "target": {
+    "size": 4166,
+    "crc32": "856356fb"
+   }
+  },
+  {
+   "path": "A/MAP24",
+   "patch": "A_MAP24.bps",
+   "source": {
+    "size": 3577,
+    "crc32": "5b2559be"
+   },
+   "target": {
+    "size": 3656,
+    "crc32": "0971763c"
+   }
+  },
+  {
+   "path": "B/OPENG",
+   "patch": "B_OPENG.bps",
+   "source": {
+    "size": 7708,
+    "crc32": "dc4de8f0"
+   },
+   "target": {
+    "size": 8457,
+    "crc32": "b92c0d15"
+   }
+  },
+  {
+   "path": "C/MAP03",
+   "patch": "C_MAP03.bps",
+   "source": {
+    "size": 4493,
+    "crc32": "c807af35"
+   },
+   "target": {
+    "size": 4493,
+    "crc32": "339ec75a"
+   }
+  },
+  {
+   "path": "C/MAP04",
+   "patch": "C_MAP04.bps",
+   "source": {
+    "size": 5475,
+    "crc32": "a573c358"
+   },
+   "target": {
+    "size": 5475,
+    "crc32": "d86f67a3"
+   }
+  },
+  {
+   "path": "C/MAP05",
+   "patch": "C_MAP05.bps",
+   "source": {
+    "size": 3675,
+    "crc32": "48b1d5d7"
+   },
+   "target": {
+    "size": 3675,
+    "crc32": "c185f636"
+   }
+  },
+  {
+   "path": "C/MAP06",
+   "patch": "C_MAP06.bps",
+   "source": {
+    "size": 875,
+    "crc32": "424b4f25"
+   },
+   "target": {
+    "size": 910,
+    "crc32": "6880bff4"
+   }
+  },
+  {
+   "path": "C/MAP07",
+   "patch": "C_MAP07.bps",
+   "source": {
+    "size": 3329,
+    "crc32": "c8f7696d"
+   },
+   "target": {
+    "size": 3404,
+    "crc32": "f9779c9e"
+   }
+  },
+  {
+   "path": "C/MAP08",
+   "patch": "C_MAP08.bps",
+   "source": {
+    "size": 3960,
+    "crc32": "e2d22434"
+   },
+   "target": {
+    "size": 4177,
+    "crc32": "aec378ef"
+   }
+  },
+  {
+   "path": "C/MAP09",
+   "patch": "C_MAP09.bps",
+   "source": {
+    "size": 3979,
+    "crc32": "1658112a"
+   },
+   "target": {
+    "size": 4067,
+    "crc32": "95ef6f60"
+   }
+  },
+  {
+   "path": "C/MAP10",
+   "patch": "C_MAP10.bps",
+   "source": {
+    "size": 5123,
+    "crc32": "175600a3"
+   },
+   "target": {
+    "size": 5345,
+    "crc32": "35e924d4"
+   }
+  },
+  {
+   "path": "E/BROE",
+   "patch": "E_BROE.bps",
+   "source": {
+    "size": 16115,
+    "crc32": "431b964a"
+   },
+   "target": {
+    "size": 17967,
+    "crc32": "5e02f1c5"
+   }
+  },
+  {
+   "path": "A/DOS.SYS",
+   "patch": "A_DOS.SYS.bps",
+   "source": {
+    "size": 47474,
+    "crc32": "86c99c0e"
+   },
+   "target": {
+    "size": 47474,
+    "crc32": "535a24b1"
+   }
+  },
+  {
+   "path": "A/DATA.SYS",
+   "patch": "A_DATA.SYS.bps",
+   "source": {
+    "size": 52308,
+    "crc32": "f723f16a"
+   },
+   "target": {
+    "size": 54568,
+    "crc32": "6dfbcc3c"
+   }
+  },
+  {
+   "path": "B/OP00",
+   "patch": "B_OP00.bps",
+   "source": {
+    "size": 19023,
+    "crc32": "02dc4249"
+   },
+   "target": {
+    "size": 13742,
+    "crc32": "e6b7a064"
+   }
+  },
+  {
+   "path": "C/Z34",
+   "patch": "C_Z34.bps",
+   "source": {
+    "size": 8089,
+    "crc32": "d88bfa05"
+   },
+   "target": {
+    "size": 9343,
+    "crc32": "5689083e"
+   }
+  }
+ ]
+}
