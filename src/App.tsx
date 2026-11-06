@@ -45,6 +45,22 @@ function CameraLights() {
 
 type Lighting = 'studio' | 'camera';
 
+const AGE_KEY = 'pc98-gallery-adult-ok';
+
+function readAgeOk(): boolean {
+  try {
+    return localStorage.getItem(AGE_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
+// nothing can be shown without consent: go back where the viewer came from
+const leaveSite = () => {
+  if (window.history.length > 1) window.history.back();
+  else window.location.href = 'about:blank';
+};
+
 const WIGGLE_IDLE_MS = 1500;
 const reducedMotion = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -154,14 +170,16 @@ export default function App() {
   const [lighting, setLighting] = useState<Lighting>('studio');
   const [accent, setAccent] = useState('#ffffff');
   const [zoomedIn, setZoomedIn] = useState(false);
+  const [ageOk, setAgeOk] = useState(readAgeOk);
 
   useEffect(() => {
+    if (!ageOk) return;
     let live = true;
     void coverPalette(COVER).then((p) => live && setAccent(p[0] ? `#${p[0].getHexString()}` : '#ffffff'));
     return () => {
       live = false;
     };
-  }, []);
+  }, [ageOk]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -170,6 +188,37 @@ export default function App() {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, []);
+
+  const acceptAge = () => {
+    try {
+      localStorage.setItem(AGE_KEY, '1');
+    } catch {
+      // private mode: accepted for this visit only
+    }
+    setAgeOk(true);
+  };
+
+  if (!ageOk) {
+    return (
+      <div className="app-container" style={{ background: `linear-gradient(180deg, ${C1} 0%, ${C2} 100%)` }}>
+        <div className="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
+          <div className="age-gate-box">
+            <span className="age-gate-mark">18+</span>
+            <h2 id="age-gate-title">Mature content</h2>
+            <p>
+              Branmarker is an adult game with nudity and sexual themes. You must be 18 years or older to view this page.
+            </p>
+            <div className="age-gate-actions">
+              <button className="age-gate-accept" onClick={acceptAge} autoFocus>
+                I am 18 or older, continue
+              </button>
+              <button onClick={leaveSite}>Leave</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div

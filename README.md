@@ -2,7 +2,7 @@
 
 3D box viewer for **Branmarker** (D.O., 1992, PC-98), with the soundtrack and the English translation patch.
 
-**[Open the site](https://delacannon.github.io/branmarker-en/)**
+**[Open the site](https://delacannon.github.io/branmarker-en/)** (18+)
 
 - 3D box: drag to orbit, wheel to zoom, `Space` to turn it, `L` to switch lighting
 - Soundtrack player with a spectrum that reacts to the music
